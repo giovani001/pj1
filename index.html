@@ -3,89 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Cartas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #666;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .deck {
-            margin: 20px auto;
-            display: flex;
-            justify-content: center;
-        }
-        .card {
-            width: 60px;
-            height: 90px;
-            background-color: #fff;
-            border: 1px solid #333;
-            border-radius: 5px;
-            margin: 0 5px;
-            display: inline-block;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        }
-    </style>
+    <title>Conheça Seus Colegas de Classe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Jogo de Cartas</h1>
+        <h1>Conheça Seus Colegas de Classe</h1>
+        <nav>
+            <a href="#games">Jogos de Cartas</a>
+            <a href="#book-club">Clube de Livros</a>
+            <a href="#challenges">Desafios e Competições</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="games.html">Jogos</a>
-        <a href="about.html">Sobre</a>
-        <a href="contact.html">Contato</a>
-    </nav>
-    <div class="container">
-        <h2>Uno Simples</h2>
-        <div class="deck">
-            <div class="card">1</div>
-            <div class="card">2</div>
-            <div class="card">3</div>
-            <!-- Adicione mais cartas conforme necessário -->
-        </div>
-        <button id="drawCard">Sortear Carta</button>
-    </div>
 
-    <script>
-        document.getElementById("drawCard").addEventListener("click", function() {
-            // Adicione aqui a lógica para sortear uma carta
-            // Exemplo simples: alerta com mensagem de carta sorteada
-            alert("Carta Sorteada!");
-        });
-    </script>
+    <section id="games" class="section">
+        <h2>Jogos de Cartas</h2>
+        <div class="container">
+            <!-- Aqui você pode adicionar elementos HTML para os jogos de cartas -->
+        </div>
+    </section>
+
+    <section id="book-club" class="section">
+        <h2>Clube de Livros</h2>
+        <div class="container">
+            <!-- Aqui você pode adicionar elementos HTML para o clube de livros -->
+        </div>
+    </section>
+
+    <section id="challenges" class="section">
+        <h2>Desafios e Competições</h2>
+        <div class="container">
+            <!-- Aqui você pode adicionar elementos HTML para os desafios e competições -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Conheça Seus Colegas de Classe</p>
+    </footer>
 </body>
 </html>
