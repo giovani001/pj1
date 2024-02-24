@@ -6,36 +6,67 @@
     <title>Conheça seus Colegas de Classe</title>
     <style>
         body {
-            background-color: #000;
-            color: #fff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f2f2f2;
         }
         header {
             background-color: #333;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
-        h1 {
-            margin: 0;
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #666;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
-        }
-        .student {
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #222;
+            background-color: #fff;
             border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .student h2 {
-            margin-top: 0;
+        .profile {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
         }
-        .student p {
-            margin-bottom: 0;
+        .profile img {
+            border-radius: 50%;
+            max-width: 100px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .profile h2 {
+            text-align: center;
+            margin: 0;
+        }
+        .profile p {
+            text-align: center;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -43,20 +74,100 @@
     <header>
         <h1>Conheça seus Colegas de Classe</h1>
     </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="profiles.html">Perfis</a>
+        <a href="contact.html">Contato</a>
+    </nav>
     <div class="container">
-        <div class="student">
+        <h2>Bem-vindo(a) à nossa turma!</h2>
+        <p>Este é o site onde você pode aprender mais sobre seus colegas de classe.</p>
+        <p>Escolha uma opção no menu acima para começar.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Conheça seus Colegas de Classe</p>
+    </footer>
+</body>
+</html>
+Agora, você precisará criar duas outras páginas: uma para os perfis dos colegas de classe (profiles.html) e outra para informações de contato (contact.html). Essas páginas seguirão uma estrutura semelhante, mas com conteúdo diferente.
+
+html
+Copy code
+<!-- profiles.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfis dos Colegas de Classe</title>
+    <style>
+        /* CSS é o mesmo que no arquivo anterior */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Perfis dos Colegas de Classe</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="profiles.html">Perfis</a>
+        <a href="contact.html">Contato</a>
+    </nav>
+    <div class="container">
+        <div class="profile">
+            <img src="joao.jpg" alt="Foto de João da Silva">
             <h2>João da Silva</h2>
             <p>Idade: 18 anos</p>
             <p>Email: joao.silva@example.com</p>
             <p>Interesses: Programação, Futebol</p>
         </div>
-        <div class="student">
+        <div class="profile">
+            <img src="maria.jpg" alt="Foto de Maria Oliveira">
             <h2>Maria Oliveira</h2>
             <p>Idade: 17 anos</p>
             <p>Email: maria.oliveira@example.com</p>
             <p>Interesses: Música, Leitura</p>
         </div>
-        <!-- Adicione mais divs .student conforme necessário para seus colegas de classe -->
+        <!-- Adicione mais perfis conforme necessário -->
     </div>
+    <footer>
+        <p>&copy; 2024 Conheça seus Colegas de Classe</p>
+    </footer>
+</body>
+</html>
+html
+Copy code
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* CSS é o mesmo que no arquivo anterior */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="profiles.html">Perfis</a>
+        <a href="contact.html">Contato</a>
+    </nav>
+    <div class="container">
+        <h2>Informações de Contato</h2>
+        <p>Para mais informações, entre em contato conosco:</p>
+        <ul>
+            <li>Email: info@example.com</li>
+            <li>Telefone: (00) 1234-5678</li>
+            <li>Endereço: Rua Principal, 123, Cidade</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Conheça seus Colegas de Classe</p>
+    </footer>
 </body>
 </html>
