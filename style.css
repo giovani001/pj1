@@ -2,7 +2,7 @@ body {
     background-color: #001f3f; /* Azul marinho */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Exemplo de fonte */
+    font-family: Arial, sans-serif;
     color: #fff; /* Cor do texto */
 }
 
@@ -17,6 +17,11 @@ header {
 header h1 {
     margin: 0;
     font-size: 36px;
+    color: #ff0000; /* Vermelho */
+}
+
+main {
+    background-color: #000; /* Preto */
 }
 
 footer {
