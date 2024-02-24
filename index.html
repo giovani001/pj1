@@ -3,60 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        input[type="text"],
-        input[type="password"],
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #555;
-        }
-    </style>
-</head>
-<body>
-    <form action="processar_login.php" method="POST">
-        <h2>Login</h2>
-        <input type="text" name="username" placeholder="Nome de Usuário" required>
-        <input type="password" name="password" placeholder="Senha" required>
-        <input type="submit" value="Login">
-    </form>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos para Conhecer Colegas</title>
+    <title>Login e Jogos para Colegas de Classe</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -104,11 +51,23 @@
         p {
             margin-bottom: 0;
         }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Jogos para Conhecer Colegas</h1>
+        <h1>Login e Jogos para Colegas de Classe</h1>
     </header>
     <nav>
         <a href="index.html">Início</a>
@@ -117,18 +76,26 @@
         <a href="contact.html">Contato</a>
     </nav>
     <div class="container">
+        <h2>Login</h2>
+        <form action="auth.php" method="POST">
+            <input type="text" name="username" placeholder="Nome de Usuário" required><br>
+            <input type="password" name="password" placeholder="Senha" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <div class="container">
+        <h2>Jogos para Conhecer Colegas</h2>
         <div class="game">
-            <h2>Jogo das Perguntas</h2>
-            <p>Um jogo divertido onde os colegas de classe fazem perguntas uns aos outros para se conhecerem melhor. Cada pessoa pode fazer uma pergunta, e todos devem responder.</p>
-            <p>Exemplo de pergunta: Qual é o seu filme favorito?</p>
+            <h3>Jogo das Perguntas</h3>
+            <p>Um jogo divertido onde os colegas de classe fazem perguntas uns aos outros para se conhecerem melhor.</p>
         </div>
         <div class="game">
-            <h2>Quebra-Gelo de Palavras</h2>
-            <p>Um jogo em que cada pessoa escolhe uma palavra aleatória e os outros devem contar uma história que inclua essa palavra. Isso pode gerar conversas interessantes e engraçadas!</p>
+            <h3>Quebra-Gelo de Palavras</h3>
+            <p>Um jogo onde cada pessoa escolhe uma palavra aleatória e os outros devem contar uma história que inclua essa palavra.</p>
         </div>
         <div class="game">
-            <h2>Bingo de Interesses</h2>
-            <p>Crie cartelas de bingo com diferentes interesses (por exemplo, "gosta de música clássica", "joga futebol", "ama cozinhar", etc.). Os participantes devem conversar entre si e marcar as cartelas conforme descobrem interesses compartilhados.</p>
+            <h3>Bingo de Interesses</h3>
+            <p>Crie cartelas de bingo com diferentes interesses e os participantes marcam conforme descobrem interesses compartilhados.</p>
         </div>
     </div>
 </body>
