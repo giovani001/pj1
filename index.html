@@ -1,22 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colegas Networking</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .colega {
+            background-color: #f0f0f0;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #0000ff; /* Azul */
+        }
+        .colega h3, .colega p {
+            margin: 0;
+        }
+        .colega img {
+            float: left;
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <align:centetr>Colegas Networking</align:centetr>
-    </header>
+    <div class="header">
+        <h1>Colegas Networking</h1>
+    </div>
+    <div class="main-content">
+        <h2>Conheça os Colegas</h2>
 
-    <main>
-        <p>Bem-vindo ao Colegas Networking! Aqui você pode se conectar com seus colegas de maneira fácil e eficiente.</p>
-    </main>
+        <!-- Adicione blocos de colegas aqui -->
+        <div class="colega">
+            <img src="caminho_para_a_foto.jpg" alt="Nome do Colega">
+            <h3>Nome do Colega</h3>
+            <p>Cargo ou descrição breve</p>
+            <div class="clear"></div>
+        </div>
+        <!-- Repita o bloco acima para cada colega adicionando a respectiva foto e informações -->
 
-    <footer>
-        <p>© 2024 Colegas Networking. Todos os direitos reservados.</p>
-    </footer>
+    </div>
 </body>
 </html>
