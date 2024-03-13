@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff; /* Fundo Branco */
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    background-color: #fff;
+    background-color: #fff; /* Fundo Branco */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -30,13 +30,14 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover; /* Garante que a foto cubra o espaço sem distorcer */
-    border: 3px solid #007bff; /* Adiciona uma borda sólida */
+    border: 3px solid #007bff; /* Adiciona uma borda sólida azul como exemplo, ajuste conforme necessário */
     margin-bottom: 10px;
 }
 
 h1 {
-    color: #333;
+    color: #ff0000; /* Título Vermelho */
     text-align: center;
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo do título */
 }
 
 h2 {
