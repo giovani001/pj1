@@ -12,24 +12,35 @@
     </header>
 
     <main>
-        <section class="colega">
-            <img src="foto1.jpg" alt="Foto do Colega 1">
-            <h2>Nome do Colega 1</h2>
-            <p>Informações sobre o Colega 1...</p>
-        </section>
+        <div class="colega-container">
+            <div class="colega">
+                <img src="foto1.jpg" alt="Foto do Colega 1">
+                <h2>Nome do Colega 1</h2>
+                <p><strong>Profissão:</strong> Desenvolvedor Web</p>
+                <button onclick="toggleInfo('info1')">Mais Informações</button>
+                <div id="info1" class="colega-info" style="display: none;">
+                    <p><strong>Email:</strong> colega1@email.com</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/colega1</p>
+                </div>
+            </div>
 
-        <section class="colega">
-            <img src="foto2.jpg" alt="Foto do Colega 2">
-            <h2>Nome do Colega 2</h2>
-            <p>Informações sobre o Colega 2...</p>
-        </section>
-
-        <!-- Adicione mais seções para mais colegas conforme necessário -->
-
+            <div class="colega">
+                <img src="foto2.jpg" alt="Foto do Colega 2">
+                <h2>Nome do Colega 2</h2>
+                <p><strong>Profissão:</strong> Designer Gráfico</p>
+                <button onclick="toggleInfo('info2')">Mais Informações</button>
+                <div id="info2" class="colega-info" style="display: none;">
+                    <p><strong>Email:</strong> colega2@email.com</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/colega2</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>© 2024 Colegas Networking. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
