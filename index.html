@@ -1,45 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegas Networking</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Conheça seus Colegas de Classe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Colegas Networking</h1>
-        </nav>
-    </header>
+    <div class="container">
+        <h1>Conheça seus Colegas de Classe</h1>
+        <form action="#">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-    <section class="team-section">
-        <div class="team-container">
-            <!-- Colega 1 -->
-            <div class="team-member">
-                <div class="member-photo" style="background-image: url('foto1.jpg');"></div>
-                <div class="member-info">
-                    <h2>Nome do Colega 1</h2>
-                    <p>Desenvolvedor Web</p>
-                    <a href="mailto:colega1@email.com">Enviar Email</a>
-                    <a href="https://linkedin.com/in/colega1" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-            <!-- Colega 2 -->
-            <div class="team-member">
-                <div class="member-photo" style="background-image: url('foto2.jpg');"></div>
-                <div class="member-info">
-                    <h2>Nome do Colega 2</h2>
-                    <p>Designer Gráfico</p>
-                    <a href="mailto:colega2@email.com">Enviar Email</a>
-                    <a href="https://linkedin.com/in/colega2" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" required>
 
-    <footer>
-        <p>© 2024 Colegas Networking. Todos os direitos reservados.</p>
-    </footer>
+            <label for="interesses">Interesses:</label>
+            <textarea id="interesses" name="interesses" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>
