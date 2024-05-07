@@ -1,78 +1,55 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  header h1 {
-    font-size: 4em;
-    margin: 0;
-  }
-  
-  .hero {
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  .hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .about {
-    background-color: #eaeaea;
-    text-align: center;
-    padding: 80px 0;
-  }
-  
-  .about h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .contact {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 80px 0;
-  }
-  
-  .contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .button {
-    display: inline-block;
-    background-color: #ff5722;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #000000;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('popcorn.jpg'); /* Substitua 'popcorn.jpg' pelo caminho da sua imagem de pipoca */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+header {
+  background-color: #007bff; /* Azul */
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff5722; /* Laranja */
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ff7043; /* Laranja mais claro */
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Preto com transparência */
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
