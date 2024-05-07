@@ -1,10 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Substitua 'background.jpg' pelo caminho da sua imagem de fundo */
-    background-size: cover;
-    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .container {
@@ -16,10 +13,12 @@ body {
     background-color: #333;
     padding: 20px 0;
     color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
   header h1 {
     margin: 0;
+    font-size: 1.8em;
   }
   
   header nav ul {
@@ -35,6 +34,11 @@ body {
   header nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff5722;
   }
   
   .hero {
@@ -45,26 +49,22 @@ body {
   
   .hero h2 {
     margin-top: 0;
+    font-size: 2.5em;
   }
   
-  .about, .contact {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-  }
-  
-  .about h2, .contact h2 {
-    text-align: center;
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
   }
   
   .button {
     display: inline-block;
     background-color: #ff5722;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 5px;
-    margin-top: 20px;
     transition: background-color 0.3s;
   }
   
@@ -72,10 +72,33 @@ body {
     background-color: #ff7043;
   }
   
+  .about, .contact {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .about h2, .contact h2 {
+    margin-top: 0;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .about p, .contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
   footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1.2em;
   }
   
