@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url('popcorn.jpg'); /* Substitua 'popcorn.jpg' pelo caminho da sua imagem de pipoca */
+  background-image: <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXHqrTKADlKoGEA2Qn1l4NRZcD7aWicilQviLtoE-wOcnXmIDUQuqe78IJG6omMYdzovpJfiHGRyLGioN76VEFsusYx93rOnfsDHmZDJ3BH1AmwynYgb221RpUdJPuNSBqIGQO_ygezB8/w1200-h630-p-k-no-nu/Pipoca_Cinema_FB.jpg">
   background-size: cover;
   background-position: center;
   color: #fff;
