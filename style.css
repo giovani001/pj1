@@ -1,6 +1,14 @@
-body{
-  background-color: rgb(0, 0, 0)55, 0, 0), 0, 0);
+/* Altera a cor do título */
+.nome h1 {
+  color: #4c00ff; /* Azul escuro */
 }
-h1{
-    color: rgb(0, 255, 13)
+
+/* Altera a cor de fundo */
+body {
+  background-color: #000000; /* Cinza claro */
+}
+
+/* Altera a cor do framework Bootstrap */
+.bg-info {
+  background-color: #4f0272; /* Azul claro */
 }
