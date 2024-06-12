@@ -1,137 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=7">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <title>CINE STREAM - Aluguel de Filmes</title>
-  <style>
-    body {
-      background-color: rgb(11, 17, 20); /* Cor de fundo */
-    }
-    .nome h1 {
-      color: #b31111ee; /* Cor do título */
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-    .filme img {
-      max-width: 150px; /* Tamanho máximo das imagens */
-      height: auto;
-    }
-    .bg-info {
-      background-color: #ff0000; /* Cor do framework Bootstrap */
-    }
-    .contato {
-      padding: 50px 0;
-    }
-  </style>
-</head>
-<body>
-  <div class="nome text-center">
-    <h1>CINE STREAM - Aluguel de Filmes</h1>
-    <form class="form-inline justify-content-center">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar filmes" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-    </form>
-</div>
-<!-- Aqui é onde você pode adicionar a imagem esticada -->
-<div class="container text-center">
-  <img src="https://diariodelcineasta.com/wp-content/uploads/2016/04/avatar-2009.jpg" class="img-fluid" alt="...">
-</div>
-<div class="container bg-info">
-   <h2>DESTAQUES DE HOJE</h2>
-</div>
-   </div>
-   <div class="container">
-       <div class="row">
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://picfiles.alphacoders.com/420/420268.jpg" alt="Filme 1" class="img-fluid">
-                   <h3>HARRY POTTER E O CÁLICE DE FOGO</h3>
-                   <p>Nesta emocionante aventura, Harry enfrenta desafios ainda maiores enquanto compete no prestigiado Torneio Tribruxo</p>
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://cinepoca.com.br/wp-content/uploads/2021/08/Harry-Potter-03-691x1024.jpg" alt="Filme 2" class="img-fluid">
-                   <h3>HARRY POTTER E A PEDRA FILOSOFAL</h3>
-                   <p>"Harry Potter e a Pedra Filosofal" é o primeiro filme da série, onde Harry, um jovem bruxo, descobre o mundo mágico ao ingressar em Hogwarts.</p
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://th.bing.com/th/id/R.24fa4f72351f44586acc27a9979ce1c5?rik=pIpIkDGlK1Y6kw&riu=http%3a%2f%2fbr.web.img3.acsta.net%2fpictures%2f20%2f03%2f30%2f17%2f23%2f0866109.jpg&ehk=MTeNKkd8v4xkBNtX2RCqYIlZy%2bIN0lnV8I72bzs0ijY%3d&risl=&pid=ImgRaw&r=0" alt="Filme 3" class="img-fluid">
-                   <h3>O RESGATE</h3>
-                   <p>"O Resgate" é um filme de ação eletrizante que acompanha um ex-soldado em uma corrida contra o tempo para salvar sua filha sequestrada, enfrentando perigos e obstáculos brutais pelo caminho.</p>
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://image.tmdb.org/t/p/w342/mbgdiugQO16XNTDA1769kUWvl2v.jpg" alt="Filme 4" class="img-fluid">
-                   <h3>DUPLA EXPLOSIVA</h3>
-                   <p>O principal guarda-costas do mundo possui um novo cliente: um assassino de aluguel que precisa testemunhar na Corte Internacional de Justiça. .</p>
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://th.bing.com/th/id/OIP.7fWfc2tvW2Cat5Z8qKquwgHaK9?rs=1&pid=ImgDetMain" alt="Filme 5" class="img-fluid">
-                   <h3>MULAN</h3>
-                   <p>uma jovem destemida arrisca tudo pelo amor à sua família e ao seu país até se tornar uma das maiores guerreiras da história da China..</p>
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://th.bing.com/th/id/R.0592f05e35128cdef6156456991ebba9?rik=IVLxjnDTKJzxzw&riu=http%3a%2f%2fwww.intrinseca.com.br%2fblog%2fwp-content%2fuploads%2f2013%2f10%2fA-Menina-que-Roubava-Livros-p%c3%b4ster-final-USE-ESSE.jpg&ehk=oSiZPwIkV671Vo4av4JxnA23IL0%2fczqy%2be3wBfQyusw%3d&risl=&pid=ImgRaw&r=0" alt="Filme 6" class="img-fluid">
-                   <h3>A MENINA QUE ROUBAVA LIVROS</h3>
-                   <p>uma garota abandonada pela mãe comunista para que possa fugir do avanço nazista. No caminho para a nova casa, onde será adotada.</p>
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://th.bing.com/th/id/R.8807fe57364b0195c739bd8716e3fc76?rik=OskVIBRmIZ8o5A&pid=ImgRaw&r=0" alt="Filme 7" class="img-fluid">
-                   <h3>VINGADORES ULTIMATO</h3>
-                   <p>Após Thanos eliminar metade das criaturas vivas de todo o universo, os heróis sobreviventes precisam lidar com a dor da perda de amigos e seus entes queridos.</p>
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-           <div class="col-md-3">
-               <div class="filme">
-                   <img src="https://jornadageek.com/wp-content/uploads/2018/12/Bird-Box-p%C3%B4ster-filme.jpg" alt="Filme 8" class="img-fluid">
-                   <h3>BIRD BOX</h3>
-                   <p>O enredo gira em torno de Malorie Hayes (Sandra Bullock), enquanto ela tenta proteger duas crianças e a si mesma de entidades sobrenaturais que fazem com que quem olhe para elas cometa suicídio..</p>
-                   <p><a href="#" class="btn btn-primary">Alugar</a></p>
-               </div>
-           </div>
-       </div>
-   </div>
-   <div class="container contato">
-       <h2>Entre em Contato</h2>
-       <form>
-           <div class="form-group">
-               <label for="nome">Nome:</label>
-               <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-           </div>
-           <div class="form-group">
-               <label for="email">E-mail:</label>
-               <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
-           </div>
-           <div class="form-group">
-               <label for="mensagem">Mensagem:</label>
-               <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
-           </div>
-           <button type="submit" class="btn btn-primary">Enviar</button>
-       </form>
-   </div>
-</body>
-</html> 
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>Cargando...</title>
+    <base href="/"/>
+
+  <link rel="icon" id="favicon" type="image/x-icon" href="assets/default_favicon.ico">
+  <style type="text/css">/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+
+    <style id="font-style">
+      @font-face {
+        font-family: --font-name;
+        src: --font-regular;
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: --font-name;
+        src: --font-medium;
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: --font-name;
+        src: --font-bold;
+        font-weight: 800;
+      }
+    </style>
+  <link rel="stylesheet" href="styles.f4d72186f0f65a37.css"></head>
+  <body class="notranslate">
+    <app-root></app-root>
+  <script src="runtime.432110b70438cf50.js" type="module"></script><script src="polyfills.271411638b62079f.js" type="module"></script><script src="main.341f582c42f94b65.js" type="module"></script></body>
+</html>
